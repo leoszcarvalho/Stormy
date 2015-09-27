@@ -1,10 +1,12 @@
-package com.carvalho.leonardo.stormy;
+package com.carvalho.leonardo.stormy.ui;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
+
+import com.carvalho.leonardo.stormy.R;
 
 /**
  * Created by Leonardo on 23/09/2015.
