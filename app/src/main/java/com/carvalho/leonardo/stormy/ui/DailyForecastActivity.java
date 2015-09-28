@@ -39,8 +39,12 @@ public class DailyForecastActivity extends Activity {
         ButterKnife.bind(this);
 
         Intent intent = getIntent();
+
+        //O retorno do intentExtra vai ser uma instância do objeto Day com um array com vários tipos de variaveis nele por isso o parcelable é necessário
         Parcelable[] parcelables = intent.getParcelableArrayExtra(MainActivity.DAILY_FORECAST);
         mDays = Arrays.copyOf(parcelables, parcelables.length, Day[].class);
+
+
 
         DayAdapter adapter = new DayAdapter(this, mDays);
         mListView.setAdapter(adapter);
